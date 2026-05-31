@@ -1,0 +1,8 @@
+PySide6
+PySide6-Fluent-Widgets
+opencv-python
+ultralytics
+deep-sort-realtime
+PyMySQL
+matplotlib
+numpy
