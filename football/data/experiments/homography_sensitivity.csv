@@ -1,0 +1,4 @@
+experiment,pixel_shift_px,projection_error_m
+homography_shift_2px,2,0.03494391200611247
+homography_shift_5px,5,0.08740960681378872
+homography_shift_10px,10,0.1749851173254763

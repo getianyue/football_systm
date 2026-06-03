@@ -1,0 +1,112 @@
+{
+  "core_ablation": [
+    {
+      "experiment": "baseline_full",
+      "avg_detections_per_frame": 8.154471544715447,
+      "confirmed_track_count": 23,
+      "mean_track_length": 82.91304347826087,
+      "fragmentation_per_100_frames": 0.0,
+      "avg_speed_mps": 2.2314058657944496,
+      "speed_std_mps": 2.7454153318583425,
+      "acc_std_mps2": 1.8962689302138418,
+      "clipped_speed_ratio": 0.04090194022024122,
+      "abnormal_acc_ratio": 0.026219192448872573,
+      "config": "{\"name\": \"baseline_full\", \"detector_conf\": 0.4, \"smoothing_enabled\": true, \"acc_filter_enabled\": true, \"speed_constraint_enabled\": true, \"tracker_max_age\": 50, \"tracker_n_init\": 3, \"tracker_max_cosine_distance\": 0.4}"
+    },
+    {
+      "experiment": "no_smoothing",
+      "avg_detections_per_frame": 8.154471544715447,
+      "confirmed_track_count": 23,
+      "mean_track_length": 82.91304347826087,
+      "fragmentation_per_100_frames": 0.0,
+      "avg_speed_mps": 2.301552500548385,
+      "speed_std_mps": 2.5171590167563402,
+      "acc_std_mps2": 2.5794999544028783,
+      "clipped_speed_ratio": 0.029365495542737284,
+      "abnormal_acc_ratio": 0.14420555846879915,
+      "config": "{\"name\": \"no_smoothing\", \"detector_conf\": 0.4, \"smoothing_enabled\": false, \"acc_filter_enabled\": true, \"speed_constraint_enabled\": true, \"tracker_max_age\": 50, \"tracker_n_init\": 3, \"tracker_max_cosine_distance\": 0.4}"
+    },
+    {
+      "experiment": "no_acc_filter",
+      "avg_detections_per_frame": 8.154471544715447,
+      "confirmed_track_count": 23,
+      "mean_track_length": 82.91304347826087,
+      "fragmentation_per_100_frames": 0.0,
+      "avg_speed_mps": 2.2314058657944496,
+      "speed_std_mps": 2.7454153318583425,
+      "acc_std_mps2": 7.305217345026157,
+      "clipped_speed_ratio": 0.04090194022024122,
+      "abnormal_acc_ratio": 0.026219192448872573,
+      "config": "{\"name\": \"no_acc_filter\", \"detector_conf\": 0.4, \"smoothing_enabled\": true, \"acc_filter_enabled\": false, \"speed_constraint_enabled\": true, \"tracker_max_age\": 50, \"tracker_n_init\": 3, \"tracker_max_cosine_distance\": 0.4}"
+    },
+    {
+      "experiment": "no_speed_constraint",
+      "avg_detections_per_frame": 8.154471544715447,
+      "confirmed_track_count": 23,
+      "mean_track_length": 82.91304347826087,
+      "fragmentation_per_100_frames": 0.0,
+      "avg_speed_mps": 2.6690721702046734,
+      "speed_std_mps": 5.114448362192264,
+      "acc_std_mps2": 2.4856251867383854,
+      "clipped_speed_ratio": 0.04090194022024122,
+      "abnormal_acc_ratio": 0.050340849501835344,
+      "config": "{\"name\": \"no_speed_constraint\", \"detector_conf\": 0.4, \"smoothing_enabled\": true, \"acc_filter_enabled\": true, \"speed_constraint_enabled\": false, \"tracker_max_age\": 50, \"tracker_n_init\": 3, \"tracker_max_cosine_distance\": 0.4}"
+    },
+    {
+      "experiment": "low_conf_0_25",
+      "avg_detections_per_frame": 14.365853658536585,
+      "confirmed_track_count": 30,
+      "mean_track_length": 90.86666666666666,
+      "fragmentation_per_100_frames": 0.0,
+      "avg_speed_mps": 2.196180544048403,
+      "speed_std_mps": 2.8663480656284874,
+      "acc_std_mps2": 1.872534633071393,
+      "clipped_speed_ratio": 0.05355832721936904,
+      "abnormal_acc_ratio": 0.03374908290535583,
+      "config": "{\"name\": \"low_conf_0_25\", \"detector_conf\": 0.25, \"smoothing_enabled\": true, \"acc_filter_enabled\": true, \"speed_constraint_enabled\": true, \"tracker_max_age\": 50, \"tracker_n_init\": 3, \"tracker_max_cosine_distance\": 0.4}"
+    },
+    {
+      "experiment": "high_conf_0_60",
+      "avg_detections_per_frame": 3.6260162601626016,
+      "confirmed_track_count": 9,
+      "mean_track_length": 96.33333333333333,
+      "fragmentation_per_100_frames": 0.0,
+      "avg_speed_mps": 1.7997110451350231,
+      "speed_std_mps": 2.401222813037916,
+      "acc_std_mps2": 1.4671612817379327,
+      "clipped_speed_ratio": 0.02191464821222607,
+      "abnormal_acc_ratio": 0.016147635524798153,
+      "config": "{\"name\": \"high_conf_0_60\", \"detector_conf\": 0.6, \"smoothing_enabled\": true, \"acc_filter_enabled\": true, \"speed_constraint_enabled\": true, \"tracker_max_age\": 50, \"tracker_n_init\": 3, \"tracker_max_cosine_distance\": 0.4}"
+    },
+    {
+      "experiment": "short_max_age_15",
+      "avg_detections_per_frame": 8.154471544715447,
+      "confirmed_track_count": 32,
+      "mean_track_length": 44.40625,
+      "fragmentation_per_100_frames": 0.0,
+      "avg_speed_mps": 1.4097355090041725,
+      "speed_std_mps": 1.7578521432025493,
+      "acc_std_mps2": 1.4686531231662214,
+      "clipped_speed_ratio": 0.012667135819845179,
+      "abnormal_acc_ratio": 0.014778325123152709,
+      "config": "{\"name\": \"short_max_age_15\", \"detector_conf\": 0.4, \"smoothing_enabled\": true, \"acc_filter_enabled\": true, \"speed_constraint_enabled\": true, \"tracker_max_age\": 15, \"tracker_n_init\": 3, \"tracker_max_cosine_distance\": 0.4}"
+    }
+  ],
+  "homography_sensitivity": [
+    {
+      "experiment": "homography_shift_2px",
+      "pixel_shift_px": 2,
+      "projection_error_m": 0.03494391200611247
+    },
+    {
+      "experiment": "homography_shift_5px",
+      "pixel_shift_px": 5,
+      "projection_error_m": 0.08740960681378872
+    },
+    {
+      "experiment": "homography_shift_10px",
+      "pixel_shift_px": 10,
+      "projection_error_m": 0.1749851173254763
+    }
+  ]
+}
